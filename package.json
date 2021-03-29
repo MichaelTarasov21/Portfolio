@@ -4,7 +4,8 @@
   "description": "My portfolio website",
   "main": "src/Scripts/index.js",
   "scripts": {
-    "start": "parcel src/Index.html"
+    "start": "parcel src/Index.html",
+    "build": "parcel build src/Index.html"
   },
   "repository": {
     "type": "git",
