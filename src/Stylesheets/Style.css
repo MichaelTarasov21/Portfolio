@@ -1,5 +1,10 @@
 html{
     font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+html,
+body {
+  margin: 0;
 }
 h1{
     text-align: center;
@@ -7,6 +12,15 @@ h1{
 }
 .button{
     cursor: pointer;
+}
+#Heading{    
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0;
+    height: 10vh;
+    font-size: 500%;
+    background-color: lightgray;
 }
 #NavButton{
     /* Make image have a fixed position on the right side of the screen */
