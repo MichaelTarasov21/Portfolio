@@ -6,26 +6,43 @@ html,
 body {
 	margin: 0;
 }
-h1 {
+.button {
+	cursor: pointer;
+}
+.BlockHeader{
+	margin: 0;
 	text-align: center;
 	font-size: 300%;
 }
-.button {
-	cursor: pointer;
+.block {
+	height: 100vh;
+}
+.ImageBar{
+	margin-left: 15%;
+	width: 70vw;
+	height: 10vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+.sampleimage{
+	height: 10vh;
+	margin: 2px;
+	background: white;
 }
 #Heading {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	height: 10vh;
-	font-size: 500%;
+	height: 1.5em;
+	font-size: 400%;
 	background-color: lightgray;
 }
 #NavButton {
 	/* Make image have a fixed position on the right side of the screen */
 	position: fixed;
-	top: 1%;
+	top: 4px;
 	right: 1%;
 
 	/* Make image have a box only on the circular image */
@@ -34,3 +51,7 @@ h1 {
 	-webkit-border-radius: 50%;
 	-o-border-radius: 50%;
 }
+#ProjectHeading{
+	padding-top: 2vh;
+}
+

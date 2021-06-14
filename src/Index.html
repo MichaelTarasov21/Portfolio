@@ -7,13 +7,25 @@
 	</head>
 	<body>
 		<header>
-			<h1 id="Heading">Michael Tarasov - Computer Science Student</h1>
+			<h1 class="BlockHeader" id="Heading">Michael Tarasov - Computer Science Student</h1>
 			<img id="NavButton" class="button" src="Assets/edit.png" alt="Navigation menu" />
 		</header>
 		<main>
 			<div class="block" id="Projects">
-				<h2>My Projects</h2>
-			</div>
+				<h2 class="BlockHeader" id="ProjectHeading">Projects</h2>
+				<div id="Project Blocks">
+					<!-- Eventually this will eventually be replaced by content filled into my backend using javascript-->
+					<div class="Project">
+						<span class="ActiveImage"></span>
+						<div class="ImageBar">
+							<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-1.jpg">
+							<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-2.jpg">
+							<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-3.jpg">
+							<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-4.jpg">
+						</div>
+					</div>
+				</div>
+			</div>			
 		</main>
 		<footer></footer>
 		<script type="module" src="Scripts/index.js"></script>
