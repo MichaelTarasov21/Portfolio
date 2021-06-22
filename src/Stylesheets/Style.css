@@ -9,7 +9,7 @@ body {
 .button {
 	cursor: pointer;
 }
-.BlockHeader{
+.BlockHeader {
 	margin: 0;
 	text-align: center;
 	font-size: 300%;
@@ -17,18 +17,34 @@ body {
 .block {
 	height: 100vh;
 }
-.ImageBar{
-	margin-left: 15%;
-	width: 70vw;
-	height: 10vh;
+.ProjectDetails{
+	position: absolute;
+	left: 5vw;
+	width: 20vw;
+}
+.ImageBar {
+	width: 80rem;
+	height: 12.8vh;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
+	overflow-x: scroll;
 }
-.sampleimage{
+.sampleimage {
 	height: 10vh;
 	margin: 2px;
 	background: white;
+	cursor: pointer;
+}
+.selectedimage {
+	border-style: solid;
+	border-width: 4px;
+	border-color: black;
+	cursor: default;
+}
+.activeimage{
+	height: 40rem;
+	width: 80rem;
 }
 #Heading {
 	display: flex;
@@ -51,7 +67,6 @@ body {
 	-webkit-border-radius: 50%;
 	-o-border-radius: 50%;
 }
-#ProjectHeading{
+#ProjectHeading {
 	padding-top: 2vh;
 }
-
