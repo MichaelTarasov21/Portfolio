@@ -17,34 +17,58 @@ body {
 .block {
 	height: 100vh;
 }
-.ProjectDetails{
+.ProjectDetails {
 	position: absolute;
-	left: 5vw;
-	width: 20vw;
+	width: 100vw;
+}
+.ImageBlock {
+	display:block;
+	width: 40vw;
+	height: 60vh;
+	padding-left: 1vw;
 }
 .ImageBar {
-	width: 80rem;
-	height: 12.8vh;
+	width: 100%;
+	height: 20%;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
 	overflow-x: scroll;
 }
 .sampleimage {
-	height: 10vh;
+	height: calc(100% -4px);
 	margin: 2px;
 	background: white;
 	cursor: pointer;
 }
 .selectedimage {
 	border-style: solid;
-	border-width: 4px;
+	border-width: .35vw;
 	border-color: black;
 	cursor: default;
 }
-.activeimage{
-	height: 40rem;
-	width: 80rem;
+.activeimage {
+	width: 100%;
+	height: 80%;
+}
+.sectionheader {
+	text-align: center;
+}
+.description {
+	position: absolute;
+	font-size: 200%;
+	width: 30%;
+	right: 15%;
+	top: 20%;
+}
+.techstack {
+	font-size: 250%;
+}
+.tools {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
 }
 #Heading {
 	display: flex;
