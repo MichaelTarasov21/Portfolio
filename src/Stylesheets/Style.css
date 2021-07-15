@@ -41,15 +41,15 @@ body {
 .ProjectInteraction {
 	position: absolute;
 	left: calc(50% - 5vw);
-/* Style the text inside of the buttons */	
+	/* Style the text inside of the buttons */
 	background-color: gray;
 	color: black;
 	text-decoration: none;
- /* Center the text inside of the buttons */
+	/* Center the text inside of the buttons */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-/* Style the buttons*/
+	/* Style the buttons*/
 	width: 10vw;
 	height: 5vh;
 	cursor: pointer;
@@ -88,7 +88,7 @@ body {
 	background-color: white;
 	top: 8vh;
 	left: 8vw;
-	height: 85vh;
+	height: 86.4vh;
 	width: 80vw;
 	z-index: 3;
 }
@@ -151,6 +151,9 @@ body {
 	flex-direction: row;
 	justify-content: space-around;
 	text-align: center;
+}
+.ToolLogo {
+	max-height: 100px;
 }
 
 .Indicator {

@@ -1,4 +1,4 @@
 const DomSelectors = {
-    PopupBackground: document.getElementById("PopupBackground"),
-}
-export{DomSelectors};
+	PopupBackground: document.getElementById("PopupBackground"),
+};
+export { DomSelectors };

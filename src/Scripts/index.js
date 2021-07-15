@@ -56,7 +56,6 @@ function MakeDetailsClosable() {
 	}
 }
 
-
 MakeImagesClickable();
 MakeDetailsClosable();
 MakeDetailsOpenable();
