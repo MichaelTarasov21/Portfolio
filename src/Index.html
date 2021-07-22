@@ -14,84 +14,13 @@
 			<span id="PopupBackground"></span>
 			<div id="ProjectBlock">
 				<h2 class="BlockHeader" id="ProjectHeading">Projects</h2>
-				<img id="PreviousProject" class="button ProjectSelector" src="Assets/Arrow.png" />
-				<img id="NextProject" class="button ProjectSelector" src="Assets/Arrow.png" />
+				<img id="MoveToPreviousProject" class="button ProjectSelector" src="Assets/Arrow.png" />
+				<img id="MoveToNextProject" class="button ProjectSelector" src="Assets/Arrow.png" />
 				<div id="Projects">
-					<div class="Project">
-						<div class="ProjectOverview">
-							<h3 class="sectionheader">Pokemon-Project</h3>
-							<img class="OverviewImage" src="/src/Assets/Pokemon-Project/Image-4.jpg" />
-							<div class="OverviewText">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-								ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-								turpis.
-								<div class="Links">
-									<a class="ProjectInteraction OpenDetails">Details</a>
-									<a href="https://js.michaeltarasov.us" class="ProjectInteraction Link">Visit</a>
-									<a href="https://github.com/MichaelTarasov21/Pokemon-API-Quiz-Game" class="ProjectInteraction Code">Github</a>
-								</div>
-							</div>
-						</div>
-						<div class="ProjectPopup">
-							<span class="close">&times</span>
-							<span class="ImageBlock">
-								<span class="ActiveImage">
-									<img class="activeimage" src="/src/Assets/Pokemon-Project/Image-1.jpg" />
-								</span>
-								<div class="ImageBar">
-									<img class="sampleimage selectedimage" src="/src/Assets/Pokemon-Project/Image-1.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-2.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-3.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-4.jpg" />
-
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-2.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-3.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-4.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-2.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-3.jpg" />
-									<img class="sampleimage" src="/src/Assets/Pokemon-Project/Image-4.jpg" />
-								</div>
-							</span>
-							<div class="description">
-								<h3 class="sectionheader">Pokemon-Project</h3>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-									ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-									turpis.
-								</div>
-							</div>
-							<div class="techstack">
-								<h3 class="sectionheader">Developed Using:</h3>
-								<div class="tools">
-									<span>
-										<img class="ToolLogo" src="/src/Assets/VSCode.png" alt="VSCode Logo" />
-										<h4>Visual Studio Code</h4>
-									</span>
-									<span>
-										<img class="ToolLogo" src="/src/Assets/Web-Stack.png" alt="Web Front End Stack" />
-										<h4>
-											HTML, CSS, <br />
-											Javascript
-										</h4>
-									</span>
-									<span>
-										<img class="ToolLogo" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="PokeAPI logo" />
-										<h4>PokeAPI</h4>
-									</span>
-									<span>
-										<img class="ToolLogo" src="/src/Assets/Github.png" alt="Github Logo" />
-										<h4>Github</h4>
-									</span>
-									<span>
-										<img class="ToolLogo" src="/src/Assets/Netlify.svg" alt="Netlify Logo" />
-										<h4>Netlify</h4>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="ProjectIndicator"><span class="Indicator IndicatorSelected"></span><span class="Indicator"></span><span class="Indicator"></span><span class="Indicator"></span><span class="Indicator"></span><span class="Indicator"></span></div>
+					<div id="PreviousProject" class="Project" ><!-- HTML Inserted Using JS --></div>
+					<div id="ActiveProject" class="Project"><!-- HTML Inserted Using JS --></div>
+					<div id="NextProject" class="Project"><!-- HTML Inserted Using JS --></div>
+				<div id="ProjectIndicator"></div>
 			</div>
 		</main>
 		<footer></footer>

@@ -21,6 +21,7 @@
     "parcel": "*"
   },
   "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-beta.2",
     "parcel-bundler": "*"
   }
 }

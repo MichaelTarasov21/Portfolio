@@ -1,4 +1,6 @@
 import { DomSelectors } from "./DomSelectors.js";
+import Projects from "./Projects.js";
+import { ChangeIndex } from "./CyclicalPagination.js";
 function SelectImage(image, itemlist) {
 	for (let i = 0; i < itemlist.length; i++) {
 		// Removes the selected image tag from all images
@@ -7,7 +9,7 @@ function SelectImage(image, itemlist) {
 	}
 	image.classList.add("selectedimage");
 
-	document.getElementsByClassName("ActiveImage")[0].innerHTML = `<img class="activeimage" src="${image.src}" />`;
+	document.getElementsByClassName("ActiveImage")[1].innerHTML = `<img class="activeimage" src="${image.src}" />`;
 }
 function MakeImagesClickable() {
 	const ActiveProjectImages = document.getElementsByClassName("sampleimage");
@@ -56,6 +58,69 @@ function MakeDetailsClosable() {
 	}
 }
 
-MakeImagesClickable();
-MakeDetailsClosable();
-MakeDetailsOpenable();
+function SetUpProjects() {
+	Projects.forEach(function () {
+		//Create a new project indicator (little gray circle) for each project in Projects.js
+		document.getElementById("ProjectIndicator").innerHTML = document.getElementById("ProjectIndicator").innerHTML + `<span class="Indicator"></span>`;
+	});
+	document.getElementsByClassName("Indicator").item(0).classList.add("IndicatorSelected");
+
+	let ActiveIndex = 0;
+
+	function ChangeIndicator() {
+		const ProjectIndicators = document.getElementsByClassName("Indicator");
+		for (let i = 0; i < ProjectIndicators.length; i++) {
+			ProjectIndicators.item(i).classList.remove("IndicatorSelected");
+		}
+		ProjectIndicators.item(ActiveIndex).classList.add("IndicatorSelected");
+	}
+	function SwitchProjects(direction) {
+		const ProjectDiv = document.getElementById("Projects");
+		//Moves background left or right depending on arrow clicked
+		if (direction < 0) {
+			ProjectDiv.classList.add("MoveRight");
+		}
+		if (direction > 0) {
+			ProjectDiv.classList.add("MoveLeft");
+		}
+		setTimeout(EndProjectSwitch, 700);
+	}
+	function InsertProjects() {
+		const PreviousProject = document.getElementById("PreviousProject");
+		const ActiveProject = document.getElementById("ActiveProject");
+		const NextProject = document.getElementById("NextProject");
+
+		PreviousProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, -1)];
+		ActiveProject.innerHTML = Projects[ActiveIndex];
+		NextProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, 1)];
+		MakeDetailsOpenable();
+		MakeDetailsClosable();
+		MakeImagesClickable();
+	}
+	function EndProjectSwitch() {
+		// Switches project order after moving betwen projects in view
+		const ProjectDiv = document.getElementById("Projects");
+
+		InsertProjects();
+		//Resets the block containg the projects to its default position after an animation so that the project stay in view
+		ProjectDiv.style.left = "-100vw";
+		ProjectDiv.classList.remove("MoveLeft");
+		ProjectDiv.classList.remove("MoveRight");
+	}
+	function ChangeProject(amount) {
+		ActiveIndex = ChangeIndex(ActiveIndex, Projects.length, amount);
+		ChangeIndicator();
+		SwitchProjects(amount);
+	}
+
+	document.getElementById("MoveToPreviousProject").addEventListener("click", function () {
+		ChangeProject(-1);
+	});
+	document.getElementById("MoveToNextProject").addEventListener("click", function () {
+		ChangeProject(1);
+	});
+
+	InsertProjects();
+}
+
+SetUpProjects();

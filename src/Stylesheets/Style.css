@@ -20,6 +20,13 @@ body {
 	height: 30vh;
 	width: 6vw;
 	top: calc(50% - 15vh);
+	z-index: 1;
+}
+
+.Project {
+	position: absolute;
+	width: 100vw;
+	height: 100%;
 }
 
 .ProjectOverview {
@@ -32,9 +39,10 @@ body {
 	width: 40vw;
 }
 .OverviewText {
-	position: absolute;
-	right: 20vw;
-	top: 30vh;
+	position: relative;
+	display: inline-block;
+	left: 5vw;
+	top: -5vh;
 	font-size: 200%;
 	width: 20vw;
 }
@@ -62,11 +70,6 @@ body {
 }
 .Code {
 	top: 12vh;
-}
-.ButtonContainer {
-	width: 100%;
-	height: 20%;
-	background-color: red;
 }
 
 #PopupBackground {
@@ -205,20 +208,85 @@ body {
 #ProjectHeading {
 	padding-top: 2vh;
 }
-#PreviousProject {
+#MoveToPreviousProject {
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 	left: 1rem;
+	cursor: pointer;
 }
-#NextProject {
+#MoveToNextProject {
 	right: 1rem;
 }
+
+#Projects {
+	height: calc(90% - 2vh - 1.5em);
+	position: absolute;
+	left: -100vw;
+	width: 300vw;
+	overflow: block;
+}
+#PreviousProject {
+	left: 0vw;
+}
+#ActiveProject {
+	left: 100vw;
+}
+#NextProject {
+	left: 200vw;
+}
+/* Moves project block right and left */
+@keyframes Slide_Right {
+	0% {
+		left: -100vw;
+	}
+	25% {
+		left: -70vw;
+	}
+	50% {
+		left: -40vw;
+	}
+	75% {
+		left: -20vw;
+	}
+	100% {
+		left: 0vw;
+	}
+}
+@keyframes Slide_Left {
+	0% {
+		left: -100vw;
+	}
+	25% {
+		left: -130vw;
+	}
+	50% {
+		left: -160vw;
+	}
+	75% {
+		left: -180vw;
+	}
+	100% {
+		left: -200vw;
+	}
+}
+
+.MoveLeft {
+	animation-name: Slide_Left;
+	animation-duration: 700ms;
+	animation-timing-function: linear;
+}
+.MoveRight {
+	animation-name: Slide_Right;
+	animation-duration: 700ms;
+	animation-timing-function: linear;
+}
+
 /* This is the id and classes used to make the small dots that indicate what project the user is viewing*/
 #ProjectIndicator {
 	position: absolute;
 	left: 40%;
 	width: 20%;
-	bottom: 1%;
+	bottom: 0%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
