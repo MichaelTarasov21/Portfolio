@@ -66,6 +66,7 @@ function SetUpProjects() {
 	document.getElementsByClassName("Indicator").item(0).classList.add("IndicatorSelected");
 
 	let ActiveIndex = 0;
+	let switching = false;
 
 	function ChangeIndicator() {
 		const ProjectIndicators = document.getElementsByClassName("Indicator");
@@ -106,6 +107,7 @@ function SetUpProjects() {
 		ProjectDiv.style.left = "-100vw";
 		ProjectDiv.classList.remove("MoveLeft");
 		ProjectDiv.classList.remove("MoveRight");
+		switching = false;
 	}
 	function ChangeProject(amount) {
 		ActiveIndex = ChangeIndex(ActiveIndex, Projects.length, amount);
@@ -114,10 +116,18 @@ function SetUpProjects() {
 	}
 
 	document.getElementById("MoveToPreviousProject").addEventListener("click", function () {
-		ChangeProject(-1);
+		if (!switching) {
+			// Prevents double click
+			ChangeProject(-1);
+			switching = true;
+		}
 	});
 	document.getElementById("MoveToNextProject").addEventListener("click", function () {
-		ChangeProject(1);
+		if (!switching) {
+			// Prevents double click
+			ChangeProject(1);
+			switching = true;
+		}
 	});
 
 	InsertProjects();
