@@ -68,6 +68,18 @@ function SetUpProjects() {
 	let ActiveIndex = 0;
 	let switching = false;
 
+	function InsertProjects() {
+		const PreviousProject = document.getElementById("PreviousProject");
+		const ActiveProject = document.getElementById("ActiveProject");
+		const NextProject = document.getElementById("NextProject");
+
+		PreviousProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, -1)];
+		ActiveProject.innerHTML = Projects[ActiveIndex];
+		NextProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, 1)];
+		MakeDetailsOpenable();
+		MakeDetailsClosable();
+		MakeImagesClickable();
+	}
 	function ChangeIndicator() {
 		const ProjectIndicators = document.getElementsByClassName("Indicator");
 		for (let i = 0; i < ProjectIndicators.length; i++) {
@@ -85,18 +97,6 @@ function SetUpProjects() {
 			ProjectDiv.classList.add("MoveLeft");
 		}
 		setTimeout(EndProjectSwitch, 700);
-	}
-	function InsertProjects() {
-		const PreviousProject = document.getElementById("PreviousProject");
-		const ActiveProject = document.getElementById("ActiveProject");
-		const NextProject = document.getElementById("NextProject");
-
-		PreviousProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, -1)];
-		ActiveProject.innerHTML = Projects[ActiveIndex];
-		NextProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, 1)];
-		MakeDetailsOpenable();
-		MakeDetailsClosable();
-		MakeImagesClickable();
 	}
 	function EndProjectSwitch() {
 		// Switches project order after moving betwen projects in view
