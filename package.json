@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My portfolio website",
-  "main": "/dist/Index.html",
+  "main": "dist/Index.html",
   "scripts": {
     "start": "parcel src/Index.html",
     "compile": "parcel build src/Index.html"
