@@ -1,8 +1,8 @@
 // Images for use in logos
-import VSCode from "url:../../Assets/VSCode.png";
-import Github from "url:../../Assets/Github.png";
-import WebFrontendStack from "url:../../Assets/Web-Stack.png";
-import Netlify from "url:../../Assets/Netlify.svg";
+const VSCode = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/VSCode.png";
+const Github = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Github.png";
+const WebFrontendStack = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Web-Stack.png";
+const Netlify = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Netlify.svg";
 
 // Images for use in display
 

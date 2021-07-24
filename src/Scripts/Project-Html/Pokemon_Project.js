@@ -1,14 +1,14 @@
 // Images for use in logos
-import VSCode from "url:../../Assets/VSCode.png";
-import Github from "url:../../Assets/Github.png";
-import WebFrontendStack from "url:../../Assets/Web-Stack.png";
-import Netlify from "url:../../Assets/Netlify.svg";
+const VSCode = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/VSCode.png";
+const Github = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Github.png";
+const WebFrontendStack = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Web-Stack.png";
+const Netlify = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Netlify.svg";
 
 // Images for use in display
-import Pokemon_Project_Image1 from "url:../../Assets/Pokemon-Project/Image-1.jpg";
-import Pokemon_Project_Image2 from "url:../../Assets/Pokemon-Project/Image-2.jpg";
-import Pokemon_Project_Image3 from "url:../../Assets/Pokemon-Project/Image-3.jpg";
-import Pokemon_Project_Image4 from "url:../../Assets/Pokemon-Project/Image-4.jpg";
+const Pokemon_Project_Image1 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-1.jpg";
+const Pokemon_Project_Image2 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-2.jpg";
+const Pokemon_Project_Image3 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-3.jpg";
+const Pokemon_Project_Image4 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-4.jpg";
 
 const PokemonProject = `<div class="ProjectOverview">
 <h3 class="sectionheader">Pokemon-Project</h3>
