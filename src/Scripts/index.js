@@ -103,8 +103,7 @@ function SetUpProjects() {
 		const ProjectDiv = document.getElementById("Projects");
 
 		InsertProjects();
-		//Resets the block containg the projects to its default position after an animation so that the project stay in view
-		ProjectDiv.style.left = "-100vw";
+		//Resets the block containg the projects to its default position after an animation so that the project stay in view	
 		ProjectDiv.classList.remove("MoveLeft");
 		ProjectDiv.classList.remove("MoveRight");
 		switching = false;
