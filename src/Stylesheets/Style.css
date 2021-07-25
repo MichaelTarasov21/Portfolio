@@ -81,7 +81,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: black;
-	opacity: 50%;
+	opacity: .5;
 	z-index: 2;
 	cursor: initial;
 }
@@ -165,7 +165,7 @@ body {
 	width: 1.5vh;
 	background-color: black;
 	margin: 2px;
-	opacity: 50%;
+	opacity: .5;
 
 	border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -173,7 +173,7 @@ body {
 	-o-border-radius: 50%;
 }
 .IndicatorSelected {
-	opacity: 100%;
+	opacity: 1;
 }
 
 #Heading {
