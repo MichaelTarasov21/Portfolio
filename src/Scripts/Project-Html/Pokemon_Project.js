@@ -1,4 +1,4 @@
-import logos from "/src/Scripts/Logos.js"
+import logos from "../Logos.js"
 
 // Images for use in display
 const Pokemon_Project_Image1 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-1.jpg";

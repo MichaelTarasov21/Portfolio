@@ -1,9 +1,9 @@
-import logos from "/src/Scripts/Logos.js"
+import logos from "../Logos.js"
 
 // Images for use in display
 
 const CSSProject = `<div class="ProjectOverview">
-<h3 class="sectionheader">Pokemon-Project</h3>
+<h3 class="sectionheader">CSS-Project</h3>
 <img class="OverviewImage" src="" />
 <div class="OverviewText">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
