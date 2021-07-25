@@ -1,8 +1,4 @@
-// Images for use in logos
-const VSCode = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/VSCode.png";
-const Github = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Github.png";
-const WebFrontendStack = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Web-Stack.png";
-const Netlify = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Netlify.svg";
+import logos from "/src/Scripts/Logos.js"
 
 // Images for use in display
 const Pokemon_Project_Image1 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-1.jpg";
@@ -58,11 +54,11 @@ const PokemonProject = `<div class="ProjectOverview">
     <h3 class="sectionheader">Developed Using:</h3>
     <div class="tools">
         <span>
-            <img class="ToolLogo" src="${VSCode}" alt="VSCode Logo" />
+            <img class="ToolLogo" src="${logos.VSCode}" alt="VSCode Logo" />
             <h4>Visual Studio Code</h4>
         </span>
         <span>
-            <img class="ToolLogo" src="${WebFrontendStack}" alt="Web Front End Stack" />
+            <img class="ToolLogo" src="${logos.WebFrontendStack}" alt="Web Front End Stack" />
             <h4>
                 HTML, CSS, <br />
                 Javascript
@@ -73,11 +69,11 @@ const PokemonProject = `<div class="ProjectOverview">
             <h4>PokeAPI</h4>
         </span>
         <span>
-            <img class="ToolLogo" src="${Github}" alt="Github Logo" />
+            <img class="ToolLogo" src="${logos.Github}" alt="Github Logo" />
             <h4>Github</h4>
         </span>
         <span>
-            <img class="ToolLogo" src="${Netlify}" alt="Netlify Logo" />
+            <img class="ToolLogo" src="${logos.Netlify}" alt="Netlify Logo" />
             <h4>Netlify</h4>
         </span>
     </div>
