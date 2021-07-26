@@ -13,8 +13,8 @@ const CSSProject = `<div class="ProjectOverview">
     <br>
     <div class="Links">
         <a class="ProjectInteraction OpenDetails">Details</a>
-        <a href="https://js.michaeltarasov.us" class="ProjectInteraction Link">Visit</a>
-        <a href="https://github.com/MichaelTarasov21/Pokemon-API-Quiz-Game" class="ProjectInteraction Code">Github</a>
+        <a href="https://css.michaeltarasov.us/" class="ProjectInteraction Link">Visit</a>
+        <a href="https://github.com/MichaelTarasov21/CSS-Project" class="ProjectInteraction Code">Github</a>
     </div>
 </div>
 </div>
@@ -39,7 +39,7 @@ const CSSProject = `<div class="ProjectOverview">
     </div>
 </span>
 <div class="description">
-    <h3 class="sectionheader">Pokemon-Project</h3>
+    <h3 class="sectionheader">CSS-Project</h3>
     <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
         ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
@@ -50,19 +50,14 @@ const CSSProject = `<div class="ProjectOverview">
     <h3 class="sectionheader">Developed Using:</h3>
     <div class="tools">
         <span>
-            <img class="ToolLogo" src="${logos.VSCode}" alt="VSCode Logo" />
-            <h4>Visual Studio Code</h4>
+            <img class="ToolLogo" src="${logos.HTML}" alt="VSCode Logo" />
+            <h4>HTML</h4>
         </span>
         <span>
-            <img class="ToolLogo" src="${logos.WebFrontendStack}" alt="Web Front End Stack" />
+            <img class="ToolLogo" src="${logos.CSS}" alt="Web Front End Stack" />
             <h4>
-                HTML, CSS, <br />
-                Javascript
+                CSS
             </h4>
-        </span>
-        <span>
-            <img class="ToolLogo" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="PokeAPI logo" />
-            <h4>PokeAPI</h4>
         </span>
         <span>
             <img class="ToolLogo" src="${logos.Github}" alt="Github Logo" />
