@@ -33,13 +33,6 @@ const PokemonProject = `<div class="ProjectOverview">
         <img class="sampleimage" src="${Pokemon_Project_Image2}" />
         <img class="sampleimage" src="${Pokemon_Project_Image3}" />
         <img class="sampleimage" src="${Pokemon_Project_Image4}" />
-
-        <img class="sampleimage" src="${Pokemon_Project_Image2}" />
-        <img class="sampleimage" src="${Pokemon_Project_Image3}" />
-        <img class="sampleimage" src="${Pokemon_Project_Image4}" />
-        <img class="sampleimage" src="${Pokemon_Project_Image2}" />
-        <img class="sampleimage" src="${Pokemon_Project_Image3}" />
-        <img class="sampleimage" src="${Pokemon_Project_Image4}" />
     </div>
 </span>
 <div class="description">
