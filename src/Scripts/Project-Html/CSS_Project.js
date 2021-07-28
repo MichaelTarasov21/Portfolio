@@ -9,7 +9,7 @@ const CSS_Image5 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio
 const CSS_Image6 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-6.jpg";
 
 const CSSProject = `<div class="ProjectOverview">
-<h3 class="sectionheader">CSS-Project</h3>
+<h3 class="sectionheader">CSS Project</h3>
 <img class="OverviewImage" src="${CSS_Image1}" />
 <div class="OverviewText">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
@@ -40,7 +40,7 @@ const CSSProject = `<div class="ProjectOverview">
     </div>
 </span>
 <div class="description">
-    <h3 class="sectionheader">CSS-Project</h3>
+    <h3 class="sectionheader">CSS Project</h3>
     <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
         ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a

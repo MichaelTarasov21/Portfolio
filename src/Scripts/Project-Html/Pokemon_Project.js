@@ -7,7 +7,7 @@ const Pokemon_Project_Image3 = "https://raw.githubusercontent.com/MichaelTarasov
 const Pokemon_Project_Image4 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-4.jpg";
 
 const Pokemon = `<div class="ProjectOverview">
-<h3 class="sectionheader">Pokemon-Project</h3>
+<h3 class="sectionheader">Pokemon Project</h3>
 <img class="OverviewImage" src="${Pokemon_Project_Image4}" />
 <div class="OverviewText">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
@@ -36,7 +36,7 @@ const Pokemon = `<div class="ProjectOverview">
     </div>
 </span>
 <div class="description">
-    <h3 class="sectionheader">Pokemon-Project</h3>
+    <h3 class="sectionheader">Pokemon Project</h3>
     <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
         ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
