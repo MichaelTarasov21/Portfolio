@@ -6,7 +6,7 @@ const Pokemon_Project_Image2 = "https://raw.githubusercontent.com/MichaelTarasov
 const Pokemon_Project_Image3 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-3.jpg";
 const Pokemon_Project_Image4 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Pokemon-Project/Image-4.jpg";
 
-const PokemonProject = `<div class="ProjectOverview">
+const Pokemon = `<div class="ProjectOverview">
 <h3 class="sectionheader">Pokemon-Project</h3>
 <img class="OverviewImage" src="${Pokemon_Project_Image4}" />
 <div class="OverviewText">
@@ -73,4 +73,4 @@ const PokemonProject = `<div class="ProjectOverview">
 </div>
 </div>`;
 
-export default PokemonProject;
+export default Pokemon;

@@ -1,6 +1,6 @@
-import PokemonProject from "./Project-Html/Pokemon_Project.js";
+import Pokemon from "./Project-Html/Pokemon_Project.js";
 import CSSProject from "./Project-Html/CSS_Project.js";
 
-const Projects = [PokemonProject, CSSProject, PokemonProject];
+const Projects = [Pokemon, CSSProject, Pokemon];
 
 export default Projects;
