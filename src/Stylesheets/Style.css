@@ -117,7 +117,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 .sampleimage {
 	height: calc(100% - 0.6vw - 2px);
