@@ -5,6 +5,8 @@ const CSS_Image1 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio
 const CSS_Image2 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-2.jpg";
 const CSS_Image3 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-3.jpg";
 const CSS_Image4 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-4.jpg";
+const CSS_Image5 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-5.jpg";
+const CSS_Image6 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-6.jpg";
 
 const CSSProject = `<div class="ProjectOverview">
 <h3 class="sectionheader">CSS-Project</h3>
@@ -33,13 +35,8 @@ const CSSProject = `<div class="ProjectOverview">
         <img class="sampleimage" src="${CSS_Image2}" />
         <img class="sampleimage" src="${CSS_Image3}" />
         <img class="sampleimage" src="${CSS_Image4}" />
-
-        <img class="sampleimage" src="${CSS_Image1}" />
-        <img class="sampleimage" src="${CSS_Image2}" />
-        <img class="sampleimage" src="${CSS_Image3}" />
-        <img class="sampleimage" src="${CSS_Image4}" />
-        <img class="sampleimage" src="${CSS_Image1}" />
-        <img class="sampleimage" src="${CSS_Image2}" />
+        <img class="sampleimage" src="${CSS_Image5}" />
+        <img class="sampleimage" src="${CSS_Image6}" />
     </div>
 </span>
 <div class="description">
