@@ -8,7 +8,7 @@ const CSS_Image4 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio
 const CSS_Image5 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-5.jpg";
 const CSS_Image6 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-6.jpg";
 
-const CSSProject = `<div class="ProjectOverview">
+const CSS_Project = `<div class="ProjectOverview">
 <h3 class="sectionheader">CSS Project</h3>
 <img class="OverviewImage" src="${CSS_Image1}" />
 <div class="OverviewText">
@@ -51,11 +51,11 @@ const CSSProject = `<div class="ProjectOverview">
     <h3 class="sectionheader">Developed Using:</h3>
     <div class="tools">
         <span>
-            <img class="ToolLogo" src="${logos.HTML}" alt="VSCode Logo" />
+            <img class="ToolLogo" src="${logos.HTML}" alt="HTML Logo" />
             <h4>HTML</h4>
         </span>
         <span>
-            <img class="ToolLogo" src="${logos.CSS}" alt="Web Front End Stack" />
+            <img class="ToolLogo" src="${logos.CSS}" alt="CSS Logo" />
             <h4>
                 CSS
             </h4>
@@ -72,4 +72,4 @@ const CSSProject = `<div class="ProjectOverview">
 </div>
 </div>`;
 
-export default CSSProject;
+export default CSS_Project;
