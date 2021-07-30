@@ -82,12 +82,12 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: black;
-	opacity: .5;
+	opacity: 0.5;
 	z-index: 2;
 	cursor: initial;
 }
 .ProjectPopup {
-	display: none;
+	visibility: hidden;
 	position: fixed;
 	background-color: white;
 	top: 8vh;
@@ -117,7 +117,16 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
-	overflow-x: auto;
+	/* Not auto to keep image sizes constant */
+	overflow-x: scroll;
+}
+.NoScrollbar {
+	height: 17%;
+	/* Prevents Scrollbar appearing */
+	scrollbar-width: none; /* Firefox */
+}
+.NoScrollbar::-webkit-scrollbar {
+	display: none;
 }
 .sampleimage {
 	height: calc(100% - 0.6vw - 2px);
@@ -166,7 +175,7 @@ body {
 	width: 1.5vh;
 	background-color: black;
 	margin: 2px;
-	opacity: .5;
+	opacity: 0.5;
 
 	border-radius: 50%;
 	-moz-border-radius: 50%;

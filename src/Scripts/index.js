@@ -24,10 +24,9 @@ function MakeImagesClickable() {
 
 function OpenDetails(index) {
 	const location = document.getElementsByClassName("ProjectPopup").item(index);
-	console.log(document.getElementsByClassName("ProjectPopup"));
 	DomSelectors.PopupBackground.style.display = "block";
 	document.body.classList.add("PopupOpen");
-	location.style.display = "block";
+	location.style.visibility = "visible";
 }
 function MakeDetailsOpenable() {
 	const OpenButtons = document.getElementsByClassName("OpenDetails");
@@ -79,6 +78,7 @@ function SetUpProjects() {
 		MakeDetailsOpenable();
 		MakeDetailsClosable();
 		MakeImagesClickable();
+		AdjustScrollbar();
 	}
 	function ChangeIndicator() {
 		const ProjectIndicators = document.getElementsByClassName("Indicator");
@@ -103,10 +103,20 @@ function SetUpProjects() {
 		const ProjectDiv = document.getElementById("Projects");
 
 		InsertProjects();
-		//Resets the block containg the projects to its default position after an animation so that the project stay in view	
+		//Resets the block containg the projects to its default position after an animation so that the project stay in view
 		ProjectDiv.classList.remove("MoveLeft");
 		ProjectDiv.classList.remove("MoveRight");
 		switching = false;
+	}
+	function AdjustScrollbar() {
+		// Hides unneeded scrollbars and resets the scrollbar position
+		let imagebar = document.getElementsByClassName("ImageBar").item(1);
+		imagebar.scrollLeft = 1;
+		const moved = imagebar.scrollLeft;
+		if (moved === 0) {
+			imagebar.classList.add("NoScrollbar");
+		}
+		imagebar.scrollLeft = 0;
 	}
 	function ChangeProject(amount) {
 		ActiveIndex = ChangeIndex(ActiveIndex, Projects.length, amount);
