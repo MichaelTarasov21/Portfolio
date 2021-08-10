@@ -41,15 +41,15 @@ body {
 }
 .OverviewText {
 	position: relative;
-	display: inline-block;
-	left: 5vw;
-	top: -5vh;
+	left: 45vw;
+	top: -40vh;
 	font-size: 200%;
 	width: 20vw;
+	height: auto;
+	min-height: 35vh;
 }
 .ProjectInteraction {
 	position: absolute;
-	left: calc(50% - 5vw);
 	/* Style the text inside of the buttons */
 	background-color: gray;
 	color: black;
@@ -64,7 +64,9 @@ body {
 	cursor: pointer;
 }
 .Links {
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 5vw);
 }
 .Link {
 	top: 6vh;
