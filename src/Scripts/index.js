@@ -24,6 +24,7 @@ function MakeImagesClickable() {
 
 function OpenDetails(index) {
 	const location = document.getElementsByClassName("ProjectPopup").item(index);
+
 	DomSelectors.PopupBackground.style.display = "block";
 	document.body.classList.add("PopupOpen");
 	location.style.visibility = "visible";
@@ -44,7 +45,7 @@ function CloseDetails(index) {
 
 	DomSelectors.PopupBackground.style.display = "none";
 	document.body.classList.remove("PopupOpen");
-	location.style.display = "none";
+	location.style.visibility = "hidden";
 }
 function MakeDetailsClosable() {
 	const CloseButtons = document.getElementsByClassName("close");
