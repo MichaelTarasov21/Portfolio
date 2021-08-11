@@ -10,9 +10,11 @@ const Pokemon = `<div class="ProjectOverview">
 <h3 class="sectionheader">Pokemon Project</h3>
 <img class="OverviewImage" src="${Pokemon_Project_Image4}" />
 <div class="OverviewText">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-    ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-    turpis.
+    This is a simple Javascript project that I created with a classmate for a high school Computer Science class in order to practice making API calls. 
+    <br>
+    <br>
+    It picks a random Pokemon from the Pokemon api and quizes the user to see if they can identify the Pokemon's name.
+    Once a user is quizzed on a Pokemon that Pokemon can then be found inside of the "Pokedex".
     <br>
     <br>
     <div class="Links">
@@ -36,11 +38,13 @@ const Pokemon = `<div class="ProjectOverview">
     </div>
 </span>
 <div class="description">
-    <h3 class="sectionheader">Pokemon Project</h3>
+    <h3 class="sectionheader descriptionheader">Pokemon Project</h3>
     <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-        ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-        turpis.
+        <p class="Paragraph">The primary focus of the Pokemon project was to create a quiz game that utilized the Pokemon API to provide information about each Pokemon.</p>
+        <br>
+        <p class="Paragraph">We expanded upon this purpose by creating a "Pokedex" where data about which Pokemon the user has been quizzed on is stored. This data is stored inside of a browser cookie to prevent it from being lost when the user leaves the web page. For purposes of the "Pokedex", a pokemon is considered to be caught if it has been correctly identified in the quiz and seen if it was incorrectly identified.</p>
+        <br>
+        <p class="Paragraph">The "Pokedex" includes an optional toggle that allows the user to see information about all pokemon and not just those that they have been quizzed on. It also includes a search feature that can be used to find pokemon using either the pokedex number or their name.</p>
     </div>
 </div>
 <div class="techstack">

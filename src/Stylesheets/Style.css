@@ -147,6 +147,9 @@ body {
 	font-size: 250%;
 	text-align: center;
 }
+.descriptionheader {
+	margin-bottom: 1rem;
+}
 .description {
 	position: absolute;
 	font-size: 200%;
@@ -183,6 +186,11 @@ body {
 }
 .IndicatorSelected {
 	opacity: 1;
+}
+.Paragraph {
+	text-indent: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #Heading {
