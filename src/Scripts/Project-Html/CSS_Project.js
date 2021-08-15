@@ -1,4 +1,4 @@
-import logos from "../Logos.js"
+import logos from "../Logos.js";
 
 // Images for use in display
 const CSS_Image1 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/CSS-Project/Image-1.jpg";
@@ -12,9 +12,11 @@ const CSS_Project = `<div class="ProjectOverview">
 <h3 class="sectionheader">CSS Project</h3>
 <img class="OverviewImage" src="${CSS_Image1}" />
 <div class="OverviewText">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-    ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-    turpis.
+    This is a project that I wrote for a high school where we learned about varuious CSS concepts and how they could be utilized to make a functional website.
+    <br>
+    <br>
+    It features a variety of effects that trigger from the user interacting with the page. 
+    It has also been tested with screens of various sizes and resolutions and found to work on all of them.
     <br>
     <br>
     <div class="Links">
@@ -42,9 +44,9 @@ const CSS_Project = `<div class="ProjectOverview">
 <div class="description">
     <h3 class="sectionheader">CSS Project</h3>
     <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-        ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-        turpis.
+    <p class="Paragraph">I wrote the CSS project in order to practice writing CSS. For this purpose I chose to write the site without using any javascript and instead making all effects occur using pure CSS. Making effects occur with CSS rather than JS has the added benefit of higher efficiency websites</p>
+    <br>
+    <p class="Paragraph">In order to ensure that the site would stay functional for years to come I hosted all images locally. Additionally, I used media querys to make the site work on all screen sizes including computers, phones, and smart watches. </p>
     </div>
 </div>
 <div class="techstack">
