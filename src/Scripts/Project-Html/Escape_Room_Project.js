@@ -18,11 +18,13 @@ const Escape_Room = `<div class="ProjectOverview">
 <h3 class="sectionheader">Escape Room Project</h3>
 <img class="OverviewImage" src="${Escape_Room_Image1}" />
 <div class="OverviewText">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-    ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-    turpis.
+    The escape room project was my final project for an AP computer science class I took during my senior year of high school. 
+    We worked on the project in a team of four in order to develop our coordination and to practice using git for version control in a collaborative environment.
     <br>
     <br>
+    The project is an escape room game featuring a collection of puzzles that we developed. The user advances through the game by solving the puzzles.
+    As the user works to solve the puzzles a timer will count down the remaining time the the user has to finsih the game. 
+    Upon finishing the game the user's remaining time will be stored and if the user finished quickly enough their score will be added to the leaderboard. 
     <div class="Links">
         <a class="ProjectInteraction OpenDetails">Details</a>
         <a href="https://vue.michaeltarasov.us/" class="ProjectInteraction Link">Visit</a>
@@ -54,9 +56,14 @@ const Escape_Room = `<div class="ProjectOverview">
 <div class="description">
     <h3 class="sectionheader">Escape Room Project</h3>
     <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dignissim elit. Vivamus non mauris ut turpis egestas consectetur. Curabitur urna quam, rhoncus quis molestie nec, consectetur eu est. Curabitur gravida auctor nunc, sed iaculis enim faucibus eget. Aliquam porttitor
-        ornare sagittis. Donec quis nulla lobortis, cursus ligula nec, feugiat felis. Suspendisse iaculis elit non purus imperdiet aliquam. Pellentesque facilisis ipsum a vehicula laoreet. Donec tempus, ipsum id pretium varius, odio sapien pellentesque urna, nec tincidunt magna diam a
-        turpis.
+        <p class="Paragraph">The escape room project uses the Vue framework to seperate the project into several components that were developed individually.
+        Each member of the team worked on creating a component for their own room and the rooms were then connected together to form a larger project.
+        We used Firebase to store how much time it took a user to complete each room and to store the score of the fastest finishers.
+        </p>
+        <br>
+        <p class="Paragraph">When creating the leaderboard I designed a primitive anti-cheat system that would prevent the user from entering the leaderboard 
+        if it was not the user's first time playing the escape room or if the user had refreshed the page after starting the game. 
+        </p>
     </div>
 </div>
 <div class="techstack">
