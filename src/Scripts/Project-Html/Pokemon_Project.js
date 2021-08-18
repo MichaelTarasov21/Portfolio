@@ -9,6 +9,14 @@ const Pokemon_Project_Image4 = "https://raw.githubusercontent.com/MichaelTarasov
 const Pokemon = `<div class="ProjectOverview">
 <h3 class="sectionheader">Pokemon Project</h3>
 <img class="OverviewImage" src="${Pokemon_Project_Image4}" />
+<br>
+<br>
+<div class="compatibility">
+    Compatible With:
+    <br>
+    <img class="compatibileDevice" src="${logos.Laptop}">
+    <img class="compatibileDevice" src="${logos.Phone}">
+</div>
 <div class="OverviewText">
     This is a simple Javascript project that I created with a classmate for a high school Computer Science class in order to practice making API calls. 
     <br>

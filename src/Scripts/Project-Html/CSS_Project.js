@@ -11,6 +11,15 @@ const CSS_Image6 = "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio
 const CSS_Project = `<div class="ProjectOverview">
 <h3 class="sectionheader">CSS Project</h3>
 <img class="OverviewImage" src="${CSS_Image1}" />
+<br>
+<br>
+<div class="compatibility">
+    Compatible With:
+    <br>
+    <img class="compatibileDevice" src="${logos.Laptop}">
+    <img class="compatibileDevice" src="${logos.Phone}">
+    <img class="compatibileDevice" src="${logos.Watch}">
+</div>
 <div class="OverviewText">
     This is a project that I wrote for a high school where we learned about varuious CSS concepts and how they could be utilized to make a functional website.
     <br>

@@ -17,6 +17,13 @@ const Escape_Room_Image12 = "https://raw.githubusercontent.com/MichaelTarasov21/
 const Escape_Room = `<div class="ProjectOverview">
 <h3 class="sectionheader">Escape Room Project</h3>
 <img class="OverviewImage" src="${Escape_Room_Image1}" />
+<br>
+<br>
+<div class="compatibility">
+    Compatible With:
+    <br>
+    <img class="compatibileDevice" src="${logos.Laptop}">
+</div>
 <div class="OverviewText">
     The escape room project was my final project for an AP computer science class I took during my senior year of high school. 
     We worked on the project in a team of four in order to develop our coordination and to practice using git for version control in a collaborative environment.

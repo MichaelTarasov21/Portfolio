@@ -39,6 +39,15 @@ body {
 	height: 40vh;
 	width: 40vw;
 }
+.compatibility {
+	width: 40vw;
+	text-align: center;
+
+	font-size: 200%;
+}
+.compatibileDevice {
+	height: 5vh;
+}
 .OverviewText {
 	position: absolute;
 	left: 55vw;
