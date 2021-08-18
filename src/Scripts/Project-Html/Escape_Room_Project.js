@@ -31,7 +31,9 @@ const Escape_Room = `<div class="ProjectOverview">
     <br>
     The project is an escape room game featuring a collection of puzzles that we developed. The user advances through the game by solving the puzzles.
     As the user works to solve the puzzles a timer will count down the remaining time the the user has to finsih the game. 
-    Upon finishing the game the user's remaining time will be stored and if the user finished quickly enough their score will be added to the leaderboard. 
+    Upon finishing the game the user's remaining time will be stored and if the user finished quickly enough their score will be added to the leaderboard.
+    <br>
+    <br>
     <div class="Links">
         <a class="ProjectInteraction OpenDetails">Details</a>
         <a href="https://vue.michaeltarasov.us/" class="ProjectInteraction Link">Visit</a>
