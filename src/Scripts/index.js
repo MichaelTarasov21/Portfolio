@@ -67,19 +67,29 @@ function SetUpProjects() {
 
 	let ActiveIndex = 0;
 	let switching = false;
-
+	function ResetBlockPosition() {
+		const ProjectDiv = document.getElementById("Projects");
+		//Resets the block containg the projects to its default position after an animation so that the project stay in view
+		ProjectDiv.classList.remove("MoveLeft");
+		ProjectDiv.classList.remove("MoveRight");
+	}
 	function InsertProjects() {
+		// Switches project order after moving betwen projects in view
 		const PreviousProject = document.getElementById("PreviousProject");
 		const ActiveProject = document.getElementById("ActiveProject");
 		const NextProject = document.getElementById("NextProject");
 
-		PreviousProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, -1)];
+		// Placed here to prevent project blinking on slower computers
 		ActiveProject.innerHTML = Projects[ActiveIndex];
+		ResetBlockPosition();
+
+		PreviousProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, -1)];
 		NextProject.innerHTML = Projects[ChangeIndex(ActiveIndex, Projects.length, 1)];
 		MakeDetailsOpenable();
 		MakeDetailsClosable();
 		MakeImagesClickable();
 		AdjustScrollbar();
+		switching = false;
 	}
 	function ChangeIndicator() {
 		const ProjectIndicators = document.getElementsByClassName("Indicator");
@@ -97,17 +107,7 @@ function SetUpProjects() {
 		if (direction > 0) {
 			ProjectDiv.classList.add("MoveLeft");
 		}
-		setTimeout(EndProjectSwitch, 700);
-	}
-	function EndProjectSwitch() {
-		// Switches project order after moving betwen projects in view
-		const ProjectDiv = document.getElementById("Projects");
-
-		InsertProjects();
-		//Resets the block containg the projects to its default position after an animation so that the project stay in view
-		ProjectDiv.classList.remove("MoveLeft");
-		ProjectDiv.classList.remove("MoveRight");
-		switching = false;
+		setTimeout(InsertProjects, 700);
 	}
 	function AdjustScrollbar() {
 		// Hides unneeded scrollbars and resets the scrollbar position
