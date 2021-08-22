@@ -59,8 +59,8 @@ body {
 .ProjectInteraction {
 	position: absolute;
 	/* Style the text inside of the buttons */
-	background-color: gray;
-	color: black;
+	background-color: #2a6e9d;
+	color: #DADEE7;
 	text-decoration: none;
 	/* Center the text inside of the buttons */
 	display: flex;
@@ -70,6 +70,17 @@ body {
 	width: 10vw;
 	height: 5vh;
 	cursor: pointer;
+	/* Round the edges */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.ProjectInteraction:hover,
+.ProjectInteraction:focus {
+	background-color: #175385;
+	box-shadow: -10px -10px 8px #505d7c;
+	-moz-box-shadow: -4px -4px 8px #505d7c;
+	-webkit-box-shadow: -4px -4px 8px #505d7c;
 }
 .Links {
 	position: absolute;
@@ -99,12 +110,16 @@ body {
 .ProjectPopup {
 	visibility: hidden;
 	position: fixed;
-	background-color: white;
+	background-color: #C3DDFD;
 	top: 8vh;
 	left: 8vw;
 	height: 86.4vh;
 	width: 80vw;
 	z-index: 3;
+	/* Round the edges */
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 }
 .close {
 	position: absolute;
@@ -226,8 +241,8 @@ body {
 	-o-border-radius: 50%;
 }
 #ProjectBlock {
-	background-color: lightgray;
-	background: linear-gradient(135deg, gray, lightgray 100%);
+	background-color: #8895b3;
+	background: linear-gradient(135deg, gray, #8895b3, 100%);
 	height: calc(100vh - 1.5em * 4);
 }
 #ProjectHeading {
