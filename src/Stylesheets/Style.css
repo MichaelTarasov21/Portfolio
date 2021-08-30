@@ -261,52 +261,52 @@ body {
 #Projects {
 	height: calc(90% - 2vh - 1.5em);
 	position: absolute;
-	left: -100vw;
-	width: 300vw;
-	overflow: block;
+	left: 0vw;
+	width: 100vw;
+	overflow: hidden;
 }
 #PreviousProject {
-	left: 0vw;
+	left: -100vw;
 }
 #ActiveProject {
-	left: 100vw;
+	left: 0vw;
 }
 #NextProject {
-	left: 200vw;
+	left: 100vw;
 }
 /* Moves project block right and left */
 @keyframes Slide_Right {
 	0% {
-		left: -100vw;
+		left: 0vw;
 	}
 	25% {
-		left: -70vw;
+		left: 30vw;
 	}
 	50% {
-		left: -40vw;
+		left: 60vw;
 	}
 	75% {
-		left: -20vw;
+		left: 80vw;
 	}
 	100% {
-		left: 0vw;
+		left: 100vw;
 	}
 }
 @keyframes Slide_Left {
 	0% {
-		left: -100vw;
+		left: 0vw;
 	}
 	25% {
-		left: -130vw;
+		left: -30vw;
 	}
 	50% {
-		left: -160vw;
+		left: -60vw;
 	}
 	75% {
-		left: -180vw;
+		left: -80vw;
 	}
 	100% {
-		left: -200vw;
+		left: -100vw;
 	}
 }
 

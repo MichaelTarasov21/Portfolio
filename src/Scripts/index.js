@@ -72,6 +72,7 @@ function SetUpProjects() {
 		//Resets the block containg the projects to its default position after an animation so that the project stay in view
 		ProjectDiv.classList.remove("MoveLeft");
 		ProjectDiv.classList.remove("MoveRight");
+		ProjectDiv.style.overflow = "hidden";
 	}
 	function InsertProjects() {
 		// Switches project order after moving betwen projects in view
@@ -100,6 +101,7 @@ function SetUpProjects() {
 	}
 	function SwitchProjects(direction) {
 		const ProjectDiv = document.getElementById("Projects");
+		ProjectDiv.style.overflow = "visible";
 		//Moves background left or right depending on arrow clicked
 		if (direction < 0) {
 			ProjectDiv.classList.add("MoveRight");
