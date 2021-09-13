@@ -11,7 +11,7 @@ const project_name = "Pokemon Project";
 const project_compatibility = [logos.Laptop, logos.Phone];
 const project_images = [Pokemon_Project_Image1, Pokemon_Project_Image2, Pokemon_Project_Image3, Pokemon_Project_Image4];
 const project_logos = [logos.VSCode, logos.WebFrontendStack, logos.PokemonAPI, logos.Github, logos.Netlify];
-const logo_names = ["Visual Studio Code", "HTML, CSS, Javascript", "PokeAPI", "Github", "Netlify"];
+const logo_names = ["Visual Studio Code", "HTML, CSS,<br> Javascript", "PokeAPI", "Github", "Netlify"];
 
 const overview =
 `
