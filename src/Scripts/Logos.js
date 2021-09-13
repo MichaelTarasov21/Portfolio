@@ -8,6 +8,7 @@ const logos = {
 	CSS: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Development-Logos/CSS.svg",
 	Vue: "https://vuejs.org/images/logo.svg",
 	Firebase: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Development-Logos/Firebase.svg",
+	PokemonAPI: "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png",
 
 	// Compatibility Logos
 	Laptop: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Compatibility-Logos/Laptop.svg",
