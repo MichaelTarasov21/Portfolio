@@ -18,7 +18,7 @@ const overview =
 	This is a simple Javascript project that I created with a classmate for a high school Computer Science class in order to practice making API calls.
 	<br />
 	<br />
-	It picks a random Pokemon from the Pokemon api and quizes the user to see if they can identify the Pokemon's name. Once a user is quizzed on a Pokemon that Pokemon can then be found inside of the "Pokedex".
+	It picks a random Pokemon from the Pokemon API and quizes the user to see if they can identify the Pokemon's name. Once a user is quizzed on a Pokemon that Pokemon can then be found inside of the "Pokedex".
 `;
 const description =
 `
