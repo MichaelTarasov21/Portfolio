@@ -1,1 +1,36 @@
- 
+.Cerification_Row {
+	height: 100%;
+	background-color: gray;
+	display: block;
+}
+.Row_Title {
+	font-size: 300%;
+	text-align: center;
+}
+.Certifications {
+	position: relative;
+	top: 10%;
+	width: 100%;
+	height: 70%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.Certification {
+	text-align: center;
+	width: 20vw;
+	font-size: 200%;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+.Certification_Image {
+	height: 20vh;
+}
+#CertificationBlock {
+	display: flex;
+	height: 100vh;
+    flex-direction: column;
+}
