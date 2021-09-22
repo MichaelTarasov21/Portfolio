@@ -3,7 +3,7 @@ class Project {
 		this.name = name;
 		this.devices = combatible_devices;
 		this.images = image_array;
-		this.overview_Image = this.images[0]
+		this.overview_Image = this.images[0];
 		if (logos.length !== logo_names.length) {
 			console.log(`Error in project ${this.name}. The number of logos provided does not equal to the number of logo names provided.`);
 		} else {
@@ -17,10 +17,10 @@ class Project {
 		// If needed the following can be changed using a method that will be written if changing the becomes necessary
 		this.poject_interact = "Visit";
 		this.project_hosting = "Github";
-		if (long_description){
-			this.smaller_gap = "descriptionheader"
+		if (long_description) {
+			this.smaller_gap = "descriptionheader";
 		} else {
-			this.smaller_gap = ""
+			this.smaller_gap = "";
 		}
 	}
 	set_overview_image(index) {
@@ -65,50 +65,52 @@ class Project {
 	}
 	html() {
 		const html = `
-            <div class="ProjectOverview">
-            <h3 class="sectionheader">${this.name}</h3>
-            <img class="OverviewImage" src="${this.overview_Image}" />
-            <br />
-            <br />
-            <div class="compatibility">
-                Compatible With:
-                <br />
-                ${this.compatibility(this.devices)}
-            </div>
-            <div class="OverviewText">
-                ${this.overview}
-                <br />
-                <br />
-                <div class="Links">
-                    <a class="ProjectInteraction OpenDetails">Details</a>
-                    <a href="${this.visit}" class="ProjectInteraction Link">${this.poject_interact}</a>
-                    <a href="${this.code}" class="ProjectInteraction Code">${this.project_hosting}</a>
-                </div>
-            </div>
-        </div>
-        <div class="ProjectPopup">
-            <span class="close">&times</span>
-            <span class="ImageBlock">
-                <span class="ActiveImage">
-                    <img class="activeimage" src="${this.images[0]}" />
-                </span>
-                <div class="ImageBar">
-                    ${this.images_bar(this.images)}
-                </div>
-            </span>
-            <div class="description">
-                <h3 class="sectionheader ${this.smaller_gap}">${this.name}</h3>
-                <div>
-                    ${this.description}
-                </div>
-            </div>
-            <div class="techstack">
-                <h3 class="sectionheader">Developed Using:</h3>
-                <div class="tools">
-                    ${this.logo_bar(this.logos, this.logo_names)}
-                </div>
-            </div>
-        </div>`;
+			<div class="Project">
+            	<div class="ProjectOverview">
+            		<h3 class="sectionheader">${this.name}</h3>
+            		<img class="OverviewImage" src="${this.overview_Image}" />
+            		<br />
+            		<br />
+            		<div class="compatibility">
+            		    Compatible With:
+            		    <br />
+            		    ${this.compatibility(this.devices)}
+            		</div>
+            		<div class="OverviewText">
+            		    ${this.overview}
+            		    <br />
+            		    <br />
+            		    <div class="Links">
+            		        <a class="ProjectInteraction OpenDetails">Details</a>
+            		        <a href="${this.visit}" class="ProjectInteraction Link">${this.poject_interact}</a>
+            		        <a href="${this.code}" class="ProjectInteraction Code">${this.project_hosting}</a>
+            		    </div>
+            		</div>
+        		</div>
+        		<div class="ProjectPopup">
+        		    <span class="close">&times</span>
+        		    <span class="ImageBlock">
+        		        <span class="ActiveImage">
+        		            <img class="activeimage" src="${this.images[0]}" />
+        		        </span>
+        		        <div class="ImageBar">
+        		            ${this.images_bar(this.images)}
+        		        </div>
+        		    </span>
+        		    <div class="description">
+        		        <h3 class="sectionheader ${this.smaller_gap}">${this.name}</h3>
+        		        <div>
+        		            ${this.description}
+        		        </div>
+        		    </div>
+        		    <div class="techstack">
+        		        <h3 class="sectionheader">Developed Using:</h3>
+        		        <div class="tools">
+        		            ${this.logo_bar(this.logos, this.logo_names)}
+        		        </div>
+        		    </div>
+        		</div>
+			</div>`;
 		return html;
 	}
 }

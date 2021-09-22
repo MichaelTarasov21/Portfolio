@@ -41,7 +41,7 @@ const description =
 const code = "https://github.com/MichaelTarasov21/Pokemon-API-Quiz-Game";
 const url = "https://js.michaeltarasov.us";
 
-const Pokemon_Project = new Project(project_name, project_compatibility, project_images, project_logos, logo_names, overview, description, code, url,  true);
+const Pokemon_Project = new Project(project_name, project_compatibility, project_images, project_logos, logo_names, overview, description, code, url, true);
 
 Pokemon_Project.set_overview_image(4);
 
