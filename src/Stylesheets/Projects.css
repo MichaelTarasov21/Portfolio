@@ -7,6 +7,7 @@
 }
 
 .Project {
+	display: none;
 	position: absolute;
 	width: 100vw;
 	height: 100%;
@@ -216,17 +217,8 @@
 	width: 100vw;
 	overflow: hidden;
 }
-#PreviousProject {
-	left: -100vw;
-}
-#ActiveProject {
-	left: 0vw;
-}
-#NextProject {
-	left: 100vw;
-}
 /* Moves project block right and left */
-@keyframes Slide_Right {
+@keyframes Slide_Right_Out {
 	0% {
 		left: 0vw;
 	}
@@ -243,7 +235,24 @@
 		left: 100vw;
 	}
 }
-@keyframes Slide_Left {
+@keyframes Slide_Right_In {
+	0% {
+		left: -100vw;
+	}
+	25% {
+		left: -70vw;
+	}
+	50% {
+		left: -40vw;
+	}
+	75% {
+		left: -20vw;
+	}
+	100% {
+		left: 0vw;
+	}
+}
+@keyframes Slide_Left_Out {
 	0% {
 		left: 0vw;
 	}
@@ -260,14 +269,45 @@
 		left: -100vw;
 	}
 }
+@keyframes Slide_Left_In {
+	0% {
+		left: 100vw;
+	}
+	25% {
+		left: 70vw;
+	}
+	50% {
+		left: 40vw;
+	}
+	75% {
+		left: 20vw;
+	}
+	100% {
+		left: 0vw;
+	}
+}
 
-.MoveLeft {
-	animation-name: Slide_Left;
+.MoveLeftOut {
+	display: block; /* Display the project while it is moving */
+	animation-name: Slide_Left_Out;
 	animation-duration: 700ms;
 	animation-timing-function: linear;
 }
-.MoveRight {
-	animation-name: Slide_Right;
+.MoveLeftIn {
+	display: block; /* Display the project while it is moving */
+	animation-name: Slide_Left_In;
+	animation-duration: 700ms;
+	animation-timing-function: linear;
+}
+.MoveRightOut {
+	display: block; /* Display the project while it is moving */
+	animation-name: Slide_Right_Out;
+	animation-duration: 700ms;
+	animation-timing-function: linear;
+}
+.MoveRightIn {
+	display: block; /* Display the project while it is moving */
+	animation-name: Slide_Right_In;
 	animation-duration: 700ms;
 	animation-timing-function: linear;
 }
