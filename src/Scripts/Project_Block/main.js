@@ -6,6 +6,7 @@ let ActiveIndex = 0;
 let activeProject;
 let nextProject;
 let previousProject;
+let changing;
 
 function insertProjects() {
 	function addProject(html, index) {
@@ -108,22 +109,28 @@ function setProjects() {
 	previousProject = document.getElementsByClassName("Project")[ChangeIndex(ActiveIndex, projectAmount, -1)];
 }
 function moveToPrevious() {
-	const projectAmount = document.getElementsByClassName("Project").length;
-	ActiveIndex = ChangeIndex(ActiveIndex, projectAmount, -1);
+	if (!changing) {
+		changing = true;
+		const projectAmount = document.getElementsByClassName("Project").length;
+		ActiveIndex = ChangeIndex(ActiveIndex, projectAmount, -1);
 
-	activeProject.classList.add("MoveRightOut");
-	previousProject.classList.add("MoveRightIn");
-	ChangeIndicator();
-	setTimeout(endMove, 700);
+		activeProject.classList.add("MoveRightOut");
+		previousProject.classList.add("MoveRightIn");
+		ChangeIndicator();
+		setTimeout(endMove, 700);
+	}
 }
 function moveToNext() {
-	const projectAmount = document.getElementsByClassName("Project").length;
-	ActiveIndex = ChangeIndex(ActiveIndex, projectAmount, 1);
+	if (!changing) {
+		changing = true;
+		const projectAmount = document.getElementsByClassName("Project").length;
+		ActiveIndex = ChangeIndex(ActiveIndex, projectAmount, 1);
 
-	activeProject.classList.add("MoveLeftOut");
-	nextProject.classList.add("MoveLeftIn");
-	ChangeIndicator();
-	setTimeout(endMove, 700);
+		activeProject.classList.add("MoveLeftOut");
+		nextProject.classList.add("MoveLeftIn");
+		ChangeIndicator();
+		setTimeout(endMove, 700);
+	}
 }
 
 function endMove() {
@@ -145,6 +152,7 @@ function endMove() {
 	// Reset the scrollbar
 	const imagebar = document.getElementsByClassName("ImageBar").item(ActiveIndex);
 	imagebar.scrollLeft = 0;
+	changing = false;
 }
 
 insertProjects();
