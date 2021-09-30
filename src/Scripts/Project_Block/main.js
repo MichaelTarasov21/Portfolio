@@ -148,7 +148,6 @@ function endMove() {
 	activeProject.style.display = "block";
 	activeProject.classList.remove("MoveLeftIn");
 	activeProject.classList.remove("MoveRightIn");
-	console.log(activeProject);
 	// Reset the scrollbar
 	const imagebar = document.getElementsByClassName("ImageBar").item(ActiveIndex);
 	imagebar.scrollLeft = 0;
