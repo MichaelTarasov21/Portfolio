@@ -39,6 +39,11 @@
 	width: 20vw;
 	min-height: 35vh;
 }
+.Links {
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 5vw);
+}
 .ProjectInteraction {
 	position: absolute;
 	/* Style the text inside of the buttons */
@@ -64,11 +69,6 @@
 	box-shadow: -10px -10px 8px #505d7c;
 	-moz-box-shadow: -4px -4px 8px #505d7c;
 	-webkit-box-shadow: -4px -4px 8px #505d7c;
-}
-.Links {
-	position: absolute;
-	bottom: 0;
-	left: calc(50% - 5vw);
 }
 .Link {
 	top: 6vh;
@@ -204,7 +204,6 @@
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 	left: 1rem;
-	cursor: pointer;
 }
 #MoveToNextProject {
 	right: 1rem;
@@ -213,9 +212,7 @@
 #Projects {
 	height: calc(90% - 2vh - 1.5em);
 	position: absolute;
-	left: 0vw;
 	width: 100vw;
-	overflow: hidden;
 }
 /* Moves project block right and left */
 @keyframes Slide_Right_Out {
