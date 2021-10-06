@@ -194,7 +194,7 @@
 }
 #ProjectBlock {
 	background-color: #8895b3;
-	background: linear-gradient(135deg, gray, #8895b3, 100%);
+	background: linear-gradient(115deg, #2d3c6262 0%, #8895b3 100%);
 	height: calc(100vh - 1.5em * 4);
 }
 #ProjectHeading {
