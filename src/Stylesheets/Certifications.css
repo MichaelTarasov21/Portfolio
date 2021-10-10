@@ -32,13 +32,24 @@
 	text-decoration: none;
 	color: black;
 }
+@media screen and (max-width: 1000px) {
+	.Certification {
+		width: 30vw;
+	}
+}
 .Certification_Image {
 	height: 20vh;
+}
+@media screen and (max-width: 1000px) {
+	.Certification_Image {
+		width: 30vw;
+		height: auto;
+	}
 }
 #CertificationBlock {
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
-	background: #F8FBEF;
+	background: #f8fbef;
 	background: linear-gradient(155deg, #8895b3 0%, #2d3c62d2 100%);
 }

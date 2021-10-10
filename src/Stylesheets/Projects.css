@@ -1,3 +1,14 @@
+.sectionheader {
+	font-size: 250%;
+	text-align: center;
+}
+@media screen and (max-width: 1000px) {
+	.sectionheader {
+		position: relative;
+		top: 6vh;
+		font-size: 400%;
+	}
+}
 .ProjectSelector {
 	position: absolute;
 	height: 30vh;
@@ -5,7 +16,12 @@
 	top: calc(50% - 15vh);
 	z-index: 1;
 }
-
+@media screen and (max-width: 1000px) {
+	.ProjectSelector {
+		height: 17vh;
+		top: calc(50% - (17vh / 2));
+	}
+}
 .Project {
 	display: none;
 	position: absolute;
@@ -22,11 +38,24 @@
 	height: 40vh;
 	width: 40vw;
 }
+@media screen and (max-width: 1000px) {
+	.OverviewImage {
+		position: relative;
+		top: 23vh;
+		width: 40vw;
+		height: 15vh;
+	}
+}
 .compatibility {
 	width: 40vw;
 	text-align: center;
-
 	font-size: 200%;
+}
+@media screen and (max-width: 1000px) {
+	.compatibility {
+		position: relative;
+		top: 23vh;
+	}
 }
 .compatibileDevice {
 	height: 5vh;
@@ -38,6 +67,12 @@
 	font-size: 200%;
 	width: 20vw;
 	min-height: 35vh;
+}
+@media screen and (max-width: 1000px) {
+	.OverviewText {
+		font-size: 220%;
+		width: 30vw;
+	}
 }
 .Links {
 	position: absolute;
@@ -70,11 +105,27 @@
 	-moz-box-shadow: -4px -4px 8px #505d7c;
 	-webkit-box-shadow: -4px -4px 8px #505d7c;
 }
+@media screen and (max-width: 1000px) {
+	.Links {
+		left: calc(50% - 10vw);
+	}
+	.ProjectInteraction {
+		width: 20vw;
+	}
+}
 .Link {
 	top: 6vh;
 }
 .Code {
 	top: 12vh;
+}
+@media screen and (max-width: 1000px) {
+	.Link {
+		top: 5.5vh;
+	}
+	.Code {
+		top: 11vh;
+	}
 }
 
 #PopupBackground {
@@ -149,9 +200,14 @@
 	width: 100%;
 	height: 80%;
 }
-.sectionheader {
-	font-size: 250%;
-	text-align: center;
+
+@media screen and (max-width: 1000px) {
+	.Link {
+		top: 5.5vh;
+	}
+	.Code {
+		top: 11vh;
+	}
 }
 .descriptionheader {
 	margin-bottom: 1rem;
@@ -212,6 +268,7 @@
 	height: calc(90% - 2vh - 1.5em);
 	position: absolute;
 	width: 100vw;
+	overflow-x: hidden; /* Prevents issues in animation when rendering on mobile */
 }
 /* Moves project block right and left */
 @keyframes Slide_Right_Out {
