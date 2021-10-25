@@ -261,7 +261,7 @@
 	left: 1rem;
 }
 #MoveToNextProject {
-	right: 1rem;
+	left: calc(100vw - 6vw - 2rem); /* Not right in order to prevent movement when popup opens */
 }
 
 #Projects {

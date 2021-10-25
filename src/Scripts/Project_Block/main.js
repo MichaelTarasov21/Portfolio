@@ -58,6 +58,7 @@ function insertProjects() {
 		const location = document.getElementsByClassName("ProjectPopup")[index];
 
 		DomSelectors.PopupBackground.style.display = "block";
+		document.body.style.top = `-${window.scrollY}px`;
 		document.body.classList.add("PopupOpen");
 		location.style.visibility = "visible";
 	}
@@ -77,6 +78,13 @@ function insertProjects() {
 
 		DomSelectors.PopupBackground.style.display = "none";
 		document.body.classList.remove("PopupOpen");
+		
+		// Resets the scroll position
+		let top = document.body.style.top
+		document.body.style.top = '';
+		top = parseInt(top) * -1
+		window.scrollTo(0, top);
+		
 		location.style.visibility = "hidden";
 	}
 	function MakeDetailsClosable() {

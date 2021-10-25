@@ -47,5 +47,7 @@ body {
 } */
 /* Prevent scrolling when a popup opens*/
 .PopupOpen {
-	overflow: block;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
 }
