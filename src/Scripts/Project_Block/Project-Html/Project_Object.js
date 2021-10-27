@@ -18,7 +18,7 @@ class Project {
 		this.poject_interact = "Visit";
 		this.project_hosting = "Github";
 		if (long_description) {
-			this.smaller_gap = "descriptionheader";
+			this.smaller_gap = "largeDescription";
 		} else {
 			this.smaller_gap = "";
 		}
@@ -98,13 +98,13 @@ class Project {
         		        </div>
         		    </span>
         		    <div class="description">
-        		        <h3 class="sectionheader ${this.smaller_gap}">${this.name}</h3>
+        		        <h3 class="sectionheader descriptionheader ${this.smaller_gap}">${this.name}</h3>
         		        <div>
         		            ${this.description}
         		        </div>
         		    </div>
         		    <div class="techstack">
-        		        <h3 class="sectionheader">Developed Using:</h3>
+        		        <h3 class="sectionheader techstackHeader">Developed Using:</h3>
         		        <div class="tools">
         		            ${this.logo_bar(this.logos, this.logo_names)}
         		        </div>

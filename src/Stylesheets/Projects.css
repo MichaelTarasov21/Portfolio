@@ -142,6 +142,12 @@
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 }
+@media screen and (max-width: 1000px) {
+	.ProjectPopup {
+		left: 5vw;
+		width: 90vw;
+	}
+}
 .close {
 	position: absolute;
 	right: 2%;
@@ -150,12 +156,25 @@
 	color: gray;
 	cursor: pointer;
 }
+@media screen and (max-width: 1000px) {
+	.close {
+		font-size: 1000%;
+	}
+}
 .ImageBlock {
 	display: block;
 	width: 36.5vw;
 	height: 50vh;
 	padding-left: 1vw;
 	padding-top: 3vh;
+}
+@media screen and (max-width: 1000px) {
+	.ImageBlock {
+		position: relative;
+		left: 10vw;
+		width: 70vw;
+		height: 30vh;
+	}
 }
 .ImageBar {
 	width: 100%;
@@ -196,7 +215,7 @@
 		top: 11vh;
 	}
 }
-.descriptionheader {
+.largeDescription {
 	margin-bottom: 1rem;
 }
 .description {
@@ -206,8 +225,32 @@
 	right: 15%;
 	top: -4vh;
 }
+@media screen and (max-width: 1000px) {
+	.descriptionheader {
+		font-size: 175%;
+		position: relative;
+		top: 0%;
+	}
+	.description {
+		font-size: 225%;
+		position: relative;
+		top: 0%;
+		left: 10%;
+		width: 80%;
+	}
+}
 .techstack {
 	font-size: 150%;
+}
+@media screen and (max-width: 1000px) {
+	.techstack {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.techstackHeader {
+		top: 0;
+	}
 }
 .tools {
 	font-size: 150%;
