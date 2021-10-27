@@ -128,19 +128,6 @@
 	}
 }
 
-#PopupBackground {
-	/* Used in place of a filter because filter was giving me some trouble */
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: black;
-	opacity: 0.5;
-	z-index: 2;
-	cursor: initial;
-}
 .ProjectPopup {
 	visibility: hidden;
 	position: fixed;

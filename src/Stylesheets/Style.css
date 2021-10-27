@@ -51,3 +51,16 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
+#PopupBackground {
+	/* Used in place of a filter because filter was giving me some trouble */
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 110vh; /* Larger than 100 to improve mobile rendering */
+	background-color: black;
+	opacity: 0.5;
+	z-index: 2;
+	cursor: initial;
+}
