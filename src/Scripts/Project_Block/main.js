@@ -10,6 +10,9 @@ let changing;
 
 function insertProjects() {
 	function addProject(html, index) {
+		function addExtensionFunctions() {
+			// Add functions here that should be added to an extension
+		}
 		function AdjustScrollbar(index) {
 			// Hides unneeded scrollbars and enlarges the images to use the extra space
 			const imagebar = document.getElementsByClassName("ImageBar").item(index);
@@ -22,6 +25,7 @@ function insertProjects() {
 		//Insert all the projects
 		document.getElementById("Projects").innerHTML = document.getElementById("Projects").innerHTML + html;
 		AdjustScrollbar();
+		addExtensionFunctions();
 		//Create a new project indicator (little gray circle) for each project in Projects.js
 		document.getElementById("ProjectIndicator").innerHTML = document.getElementById("ProjectIndicator").innerHTML + `<span class="Indicator"></span>`;
 	}
@@ -78,13 +82,13 @@ function insertProjects() {
 
 		DomSelectors.PopupBackground.style.display = "none";
 		document.body.classList.remove("PopupOpen");
-		
+
 		// Resets the scroll position
-		let top = document.body.style.top
-		document.body.style.top = '';
-		top = parseInt(top) * -1
+		let top = document.body.style.top;
+		document.body.style.top = "";
+		top = parseInt(top) * -1;
 		window.scrollTo(0, top);
-		
+
 		location.style.visibility = "hidden";
 	}
 	function MakeDetailsClosable() {
