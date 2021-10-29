@@ -24,7 +24,7 @@ function insertProjects() {
 		}
 		//Insert all the projects
 		document.getElementById("Projects").innerHTML = document.getElementById("Projects").innerHTML + html;
-		AdjustScrollbar();
+		AdjustScrollbar(index);
 		addExtensionFunctions();
 		//Create a new project indicator (little gray circle) for each project in Projects.js
 		document.getElementById("ProjectIndicator").innerHTML = document.getElementById("ProjectIndicator").innerHTML + `<span class="Indicator"></span>`;
