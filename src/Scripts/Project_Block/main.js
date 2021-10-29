@@ -10,9 +10,6 @@ let changing;
 
 function insertProjects() {
 	function addProject(html, index) {
-		function addExtensionFunctions() {
-			// Add functions here that should be added to an extension
-		}
 		function AdjustScrollbar(index) {
 			// Hides unneeded scrollbars and enlarges the images to use the extra space
 			const imagebar = document.getElementsByClassName("ImageBar").item(index);
@@ -25,12 +22,15 @@ function insertProjects() {
 		//Insert all the projects
 		document.getElementById("Projects").innerHTML = document.getElementById("Projects").innerHTML + html;
 		AdjustScrollbar(index);
-		addExtensionFunctions();
 		//Create a new project indicator (little gray circle) for each project in Projects.js
 		document.getElementById("ProjectIndicator").innerHTML = document.getElementById("ProjectIndicator").innerHTML + `<span class="Indicator"></span>`;
 	}
+	function addExtensionMethods() {
+		// Add methods here that should be added to an extension
+	}
 
 	Projects.forEach(addProject);
+	addExtensionMethods();
 	setProjects();
 
 	activeProject.style.display = "block";
