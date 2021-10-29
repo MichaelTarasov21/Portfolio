@@ -1,5 +1,5 @@
 class Project {
-	extensions = ""
+	extensions = "";
 	constructor(name = String, combatible_devices = Array, image_array = Array, logos = Array, logo_names = Array, overview = String, description = String, code = String, url = String, long_description = false) {
 		this.name = name;
 		this.devices = combatible_devices;
@@ -64,8 +64,8 @@ class Project {
 		logo_images.forEach(addLogo);
 		return logos_row;
 	}
-	extension(html){
-		this.extensions = this.extension + html
+	extension(html) {
+		this.extensions = this.extensions + html;
 	}
 	html() {
 		const html = `
