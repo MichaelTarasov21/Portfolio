@@ -37,7 +37,7 @@ const description =
 `;
 
 const code = "https://github.com/MichaelTarasov21/CSS-Project";
-const url = "https://css.michaeltarasov.us";
+const url = "https://css.mtarasov.com";
 
 const CSS_Project = new Project(project_name, project_compatibility, project_images, project_logos, logo_names, overview, description, code, url);
 

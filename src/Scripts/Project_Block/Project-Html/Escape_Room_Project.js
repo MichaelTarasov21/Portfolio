@@ -45,7 +45,7 @@ const description =
 `;
 
 const code = "https://github.com/MichaelTarasov21/full-stack-2021-escaperoom";
-const url = "https://vue.michaeltarasov.us";
+const url = "https://vue.mtarasov.com";
 
 const Escape_Room_Project = new Project(project_name, project_compatibility, project_images, project_logos, logo_names, overview, description, code, url);
 

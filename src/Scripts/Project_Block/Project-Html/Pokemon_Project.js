@@ -39,7 +39,7 @@ const description =
 `;
 
 const code = "https://github.com/MichaelTarasov21/Pokemon-API-Quiz-Game";
-const url = "https://js.michaeltarasov.us";
+const url = "https://js.mtarasov.com";
 
 const Pokemon_Project = new Project(project_name, project_compatibility, project_images, project_logos, logo_names, overview, description, code, url, true);
 
