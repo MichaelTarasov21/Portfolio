@@ -49,4 +49,4 @@ const url = "https://vue.mtarasov.com";
 
 const Escape_Room_Project = new Project(project_name, project_compatibility, project_images, project_logos, logo_names, overview, description, code, url);
 
-export default Escape_Room_Project.html();
+export default Escape_Room_Project;

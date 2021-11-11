@@ -45,4 +45,4 @@ const Pokemon_Project = new Project(project_name, project_compatibility, project
 
 Pokemon_Project.set_overview_image(4);
 
-export default Pokemon_Project.html();
+export default Pokemon_Project;
