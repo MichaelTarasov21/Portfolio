@@ -1,6 +1,8 @@
 import { DomSelectors } from "./DomSelectors.js";
 import Projects from "./Projects.js";
 import { ChangeIndex } from "./CyclicalPagination.js";
+// Needed for extensions
+import Escape_Room_Project from "./Project-Html/Escape_Room_Project.js";
 
 let ActiveIndex = 0;
 let activeProject;
@@ -9,16 +11,16 @@ let previousProject;
 let changing;
 
 function insertProjects() {
-	function addProject(html, index) {
-		function AdjustScrollbar(index) {
-			// Hides unneeded scrollbars and enlarges the images to use the extra space
-			const imagebar = document.getElementsByClassName("ImageBar").item(index);
-			imagebar.scrollLeft = 1;
-			const moved = imagebar.scrollLeft;
-			if (moved === 0) {
-				imagebar.classList.add("NoScrollbar");
-			}
+	function AdjustScrollbar(index) {
+		// Hides unneeded scrollbars and enlarges the images to use the extra space
+		const imagebar = document.getElementsByClassName("ImageBar").item(index);
+		imagebar.scrollLeft = 1;
+		const moved = imagebar.scrollLeft;
+		if (moved === 0) {
+			imagebar.classList.add("NoScrollbar");
 		}
+	}
+	function addProject(html, index) {
 		//Insert all the projects
 		document.getElementById("Projects").innerHTML = document.getElementById("Projects").innerHTML + html;
 		AdjustScrollbar(index);
@@ -27,6 +29,10 @@ function insertProjects() {
 	}
 	function addExtensionMethods() {
 		// Add methods here that should be added to an extension
+		document.getElementById("escapeRoomToggle").addEventListener("click", function () {
+			Escape_Room_Project.isolateRoomFour(ActiveIndex);
+			AdjustScrollbar(ActiveIndex)
+		});
 	}
 
 	Projects.forEach(addProject);

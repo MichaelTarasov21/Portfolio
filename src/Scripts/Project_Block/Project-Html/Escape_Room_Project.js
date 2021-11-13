@@ -31,6 +31,10 @@ const overview =
 	As the user works to solve the puzzles a timer will count down the remaining time the the user has to finsih the game. Upon finishing the game the
 	user's remaining time will be stored and if the user finished quickly enough their score will be added to the leaderboard.	
 `;
+const isolatedOverview =
+`
+I am being written
+`;
 const description =
 `
 	<p class="Paragraph">
@@ -43,10 +47,77 @@ const description =
 		When creating the leaderboard I designed a primitive anti-cheat system that would prevent the user from entering the leaderboard if it was not the user's first time playing the escape room or if the user had refreshed the page after starting the game.
 	</p>
 `;
+const isolatedDescription =
+`
+I am being written
+`;
 
 const code = "https://github.com/MichaelTarasov21/full-stack-2021-escaperoom";
 const url = "https://vue.mtarasov.com";
 
+const toggle =
+`
+<div id="escapeRoomToggle">
+	Full Project&nbsp
+	<label class="switch">
+		<input type="checkbox">
+		<span class="slider round"></span>
+	</label>
+	&nbspRoom 4 Isolated
+</div>
+`;
+function isolateProject(ProjectIndex = Number) {
+	function getElement(name = String) {
+		// returns the element with a given class name that is associated with this project
+		return document.getElementsByClassName(name)[ProjectIndex];
+	}
+	const toggleFlipped = document.getElementById("escapeRoomToggle").childNodes[1].childNodes[1].checked;
+	if (toggleFlipped) {
+		// If toggle is turned on
+		this.set_overview_image(8);
+		getElement("OverviewImage").src = this.overview_Image;
+		getElement("OverviewTextBody").innerHTML = isolatedOverview;
+		getElement("Link").href = "https://room4.mtarasov.com";
+		getElement("Code").href = "https://github.com/MichaelTarasov21/full-stack-2021-escaperoom/tree/Michael-Isolated";
+		getElement("ImageBar").childNodes.forEach(function (item, index) {
+			if (1 < index && index <= 6) {
+				item.style.display = "none";
+			}
+		});
+		getElement("description").innerHTML =
+		`
+			<h3 class="sectionheader descriptionheader ${this.smaller_gap}">${this.name}</h3>
+			<div>
+				${isolatedDescription}
+			</div>
+		`;
+	} else {
+		// If toggle is turned off
+		this.set_overview_image(1);
+		getElement("OverviewImage").src = this.overview_Image;
+		getElement("OverviewTextBody").innerHTML = `
+		${this.overview}
+		`;
+		getElement("Link").href = this.visit;
+		getElement("Code").href = this.code;
+		getElement("ImageBar").childNodes.forEach(function (item, index) {
+			if (index != 0 && index != getElement("ImageBar").childNodes.length - 1) {
+				item.style.display = "";
+			}
+		});
+		getElement("description").innerHTML = 
+		`
+			<h3 class="sectionheader descriptionheader ${this.smaller_gap}">${this.name}</h3>
+			<div>
+				${this.description}
+			</div>
+		`;
+	}
+	getElement("activeimage").src = this.images[0];
+}
+
+Project.prototype.isolateRoomFour = isolateProject;
 const Escape_Room_Project = new Project(project_name, project_compatibility, project_images, project_logos, logo_names, overview, description, code, url);
+Escape_Room_Project.extension(toggle);
 
 export default Escape_Room_Project;

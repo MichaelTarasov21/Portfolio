@@ -82,7 +82,9 @@ class Project {
             		    ${this.compatibility(this.devices)}
             		</div>
             		<div class="OverviewText">
-            		    ${this.overview}
+						<span class="OverviewTextBody">
+            		    	${this.overview}
+						</span>
             		    <br />
             		    <br />
             		    <div class="Links">
