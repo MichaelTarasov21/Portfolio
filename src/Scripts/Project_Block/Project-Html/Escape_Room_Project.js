@@ -33,7 +33,14 @@ const overview =
 `;
 const isolatedOverview =
 `
-I am being written
+	The escape room project was my final project for an AP computer science class I took during my senior year of high school.
+	We worked on the project in a team of four in order to develop our coordination and to practice using git for version control in a collaborative environment.
+	This is my isolated contribution to the group project.
+	<br />
+	<br />
+	The project is an escape room game featuring a collection of puzzles that we developed. The user advances through the game by solving the puzzles. 
+	As the user works to solve the puzzles a timer will count down the remaining time the the user has to finsih the game. Since this is only part of the game,
+	no score will be saved to the leaderboard.
 `;
 const description =
 `
@@ -49,7 +56,16 @@ const description =
 `;
 const isolatedDescription =
 `
-I am being written
+	<p class="Paragraph">
+		The escape room project uses the Vue framework to seperate the project into several components that were developed individually. 
+		Each member of the team worked on creating a component for their own room.
+		Due to the rather large scale of the final project and the fact that my room was the last in the sequence, I decided that it would 
+		be a good idea to isolate my contribution into a standalone project for my portfolio.
+	</p>
+	<br />
+	<p class="Paragraph">
+		The full project includes a primitive anti-cheat system that I designed. This system logs when a user starts to play and if they restart their score will not be logged.
+	</p>
 `;
 
 const code = "https://github.com/MichaelTarasov21/full-stack-2021-escaperoom";
@@ -63,7 +79,7 @@ const toggle =
 		<input type="checkbox">
 		<span class="slider round"></span>
 	</label>
-	&nbspRoom 4 Isolated
+	&nbspRoom 4 Standalone
 </div>
 `;
 function isolateProject(ProjectIndex = Number) {
