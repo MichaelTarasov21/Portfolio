@@ -184,11 +184,8 @@
 	flex-direction: row;
 	/* Not auto to keep image sizes constant */
 	/* Images resized and scrollbar hidden when needed */
-	overflow-x: scroll;
-}
-.NoScrollbar {
-	height: 17%;
 	overflow-x: auto;
+	overflow-y: hidden;
 }
 .sampleimage {
 	height: calc(100% - 0.6vw - 2px);

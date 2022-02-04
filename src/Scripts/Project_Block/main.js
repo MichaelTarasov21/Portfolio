@@ -11,19 +11,9 @@ let previousProject;
 let changing;
 
 function insertProjects() {
-	function AdjustScrollbar(index) {
-		// Hides unneeded scrollbars and enlarges the images to use the extra space
-		const imagebar = document.getElementsByClassName("ImageBar").item(index);
-		imagebar.scrollLeft = 1;
-		const moved = imagebar.scrollLeft;
-		if (moved === 0) {
-			imagebar.classList.add("NoScrollbar");
-		}
-	}
 	function addProject(html, index) {
 		//Insert all the projects
 		document.getElementById("Projects").innerHTML = document.getElementById("Projects").innerHTML + html;
-		AdjustScrollbar(index);
 		//Create a new project indicator (little gray circle) for each project in Projects.js
 		document.getElementById("ProjectIndicator").innerHTML = document.getElementById("ProjectIndicator").innerHTML + `<span class="Indicator"></span>`;
 	}
@@ -31,7 +21,6 @@ function insertProjects() {
 		// Add methods here that should be added to an extension
 		document.getElementById("escapeRoomToggle").addEventListener("click", function () {
 			Escape_Room_Project.isolateRoomFour(ActiveIndex);
-			AdjustScrollbar(ActiveIndex)
 		});
 	}
 
