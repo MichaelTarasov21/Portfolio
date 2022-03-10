@@ -6,7 +6,7 @@ const logos = {
 	WebFrontendStack: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Development-Logos/Web-Stack.png",
 	HTML: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Development-Logos/HTML.svg",
 	CSS: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Development-Logos/CSS.svg",
-	Vue: "https://vuejs.org/images/logo.svg",
+	Vue: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/staging/src/Assets/Development-Logos/Vue.js.svg",
 	Firebase: "https://raw.githubusercontent.com/MichaelTarasov21/Portfolio/master/src/Assets/Development-Logos/Firebase.svg",
 	PokemonAPI: "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png",
 
